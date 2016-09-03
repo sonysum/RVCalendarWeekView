@@ -29,6 +29,8 @@
 		763A802A1D6C4488002E0CBF /* MSDragableEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 763A80291D6C4488002E0CBF /* MSDragableEvent.m */; };
 		763A80301D6C664B002E0CBF /* MSWeekViewDragable.m in Sources */ = {isa = PBXBuildFile; fileRef = 763A802F1D6C664B002E0CBF /* MSWeekViewDragable.m */; };
 		766E7E1D1D6B9C9F007A410C /* MSWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E7E1C1D6B9C9F007A410C /* MSWeekView.m */; };
+		A7AE14761D7A9157009ACCF2 /* MSAllDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE14751D7A9157009ACCF2 /* MSAllDayView.m */; };
+		A7AE14791D7AAD58009ACCF2 /* MSAllDayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AE14781D7AAD58009ACCF2 /* MSAllDayViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,10 @@
 		766E7E1C1D6B9C9F007A410C /* MSWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSWeekView.m; path = Lib/MSWeekView.m; sourceTree = "<group>"; };
 		8FDAFB4856BB0AE73EB6A3F7 /* Pods-RVCalendarWeekView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVCalendarWeekView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RVCalendarWeekView/Pods-RVCalendarWeekView.debug.xcconfig"; sourceTree = "<group>"; };
 		94DA0963804F978228925295 /* Pods-RVCalendarWeekView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVCalendarWeekView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RVCalendarWeekView/Pods-RVCalendarWeekView.release.xcconfig"; sourceTree = "<group>"; };
+		A7AE14741D7A9157009ACCF2 /* MSAllDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAllDayView.h; sourceTree = "<group>"; };
+		A7AE14751D7A9157009ACCF2 /* MSAllDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAllDayView.m; sourceTree = "<group>"; };
+		A7AE14771D7AAD58009ACCF2 /* MSAllDayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAllDayViewCell.h; sourceTree = "<group>"; };
+		A7AE14781D7AAD58009ACCF2 /* MSAllDayViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAllDayViewCell.m; sourceTree = "<group>"; };
 		AB0AB32BB77DBD1AD335BF12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F4E93530877B5C9152F5F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D7874432796CEC126EFC1600 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +195,8 @@
 			children = (
 				766E7E1B1D6B9C9F007A410C /* MSWeekView.h */,
 				766E7E1C1D6B9C9F007A410C /* MSWeekView.m */,
+				A7AE14741D7A9157009ACCF2 /* MSAllDayView.h */,
+				A7AE14751D7A9157009ACCF2 /* MSAllDayView.m */,
 				763A802E1D6C664B002E0CBF /* MSWeekViewDragable.h */,
 				763A802F1D6C664B002E0CBF /* MSWeekViewDragable.m */,
 				76276EFF1D6B8637002C1D39 /* Event */,
@@ -248,6 +256,8 @@
 			children = (
 				76276EEC1D6B826B002C1D39 /* MSEventCell.h */,
 				76276EED1D6B826B002C1D39 /* MSEventCell.m */,
+				A7AE14771D7AAD58009ACCF2 /* MSAllDayViewCell.h */,
+				A7AE14781D7AAD58009ACCF2 /* MSAllDayViewCell.m */,
 				763A80281D6C4488002E0CBF /* MSDragableEvent.h */,
 				763A80291D6C4488002E0CBF /* MSDragableEvent.m */,
 			);
@@ -427,7 +437,9 @@
 				76276EFD1D6B826B002C1D39 /* MSTimeRowHeader.m in Sources */,
 				76276EF71D6B826B002C1D39 /* MSCurrentTimeIndicator.m in Sources */,
 				766E7E1D1D6B9C9F007A410C /* MSWeekView.m in Sources */,
+				A7AE14761D7A9157009ACCF2 /* MSAllDayView.m in Sources */,
 				76276EF81D6B826B002C1D39 /* MSDayColumnHeader.m in Sources */,
+				A7AE14791D7AAD58009ACCF2 /* MSAllDayViewCell.m in Sources */,
 				76276EBA1D6B81D4002C1D39 /* AppDelegate.m in Sources */,
 				763857F41D6BA4DF008D1328 /* README.md in Sources */,
 				76276EF61D6B826B002C1D39 /* MSCurrentTimeGridline.m in Sources */,

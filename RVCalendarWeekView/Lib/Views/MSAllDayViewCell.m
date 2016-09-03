@@ -38,7 +38,7 @@
     WS(ws);
     _cellContentView = [[UIView alloc]init];
     _cellContentView.backgroundColor = [UIColor whiteColor];
-
+    
     UIEdgeInsets padding = UIEdgeInsetsMake(8, 0, 8, 0);
     
     [self.contentView addSubview:_cellContentView];
@@ -62,7 +62,6 @@
     }];
 }
 
-
 - (UILabel *)title{
     if (!_title) {
         _title = [[UILabel alloc]init];
@@ -82,7 +81,6 @@
     }
     return _subTitle;
 }
-
 
 + (NSString *)identifier {
     return @"MSAllDayViewCell_identifier";

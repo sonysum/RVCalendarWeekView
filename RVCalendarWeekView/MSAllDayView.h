@@ -13,7 +13,6 @@
 @property (nonatomic, strong) NSDate *day;
 @property (nonatomic, assign) BOOL currentDay;
 
-
 - (void)reloadTableViewWithAllDayDataSource:(NSArray *)allDaydataSource andSelectDate:(NSDate *)selectDate;
 
 @end

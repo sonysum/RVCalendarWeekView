@@ -19,10 +19,11 @@
 #import "MSTimeRowHeaderBackground.h"
 #import "MSDayColumnHeaderBackground.h"
 #import "MSEventCell.h"
-#import "MSDayColumnHeader.h"
+//#import "MSDayColumnHeader.h"
 #import "MSTimeRowHeader.h"
 #import "MSCurrentTimeIndicator.h"
 #import "MSCurrentTimeGridline.h"
+#import "MSAllDayView.h"
 
 #define MSEventCellReuseIdentifier        @"MSEventCellReuseIdentifier"
 #define MSDayColumnHeaderReuseIdentifier  @"MSDayColumnHeaderReuseIdentifier"
@@ -76,7 +77,7 @@
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
     [self.collectionView registerClass:MSEventCell.class forCellWithReuseIdentifier:MSEventCellReuseIdentifier];
-    [self.collectionView registerClass:MSDayColumnHeader.class forSupplementaryViewOfKind:MSCollectionElementKindDayColumnHeader withReuseIdentifier:MSDayColumnHeaderReuseIdentifier];
+    [self.collectionView registerClass:MSAllDayView.class forSupplementaryViewOfKind:MSCollectionElementKindDayColumnHeader withReuseIdentifier:MSDayColumnHeaderReuseIdentifier];
     [self.collectionView registerClass:MSTimeRowHeader.class forSupplementaryViewOfKind:MSCollectionElementKindTimeRowHeader withReuseIdentifier:MSTimeRowHeaderReuseIdentifier];
     
     // These are optional. If you don't want any of the decoration views, just don't register a class for them.
@@ -176,7 +177,7 @@
 {
     UICollectionReusableView *view;
     if (kind == MSCollectionElementKindDayColumnHeader) {
-        MSDayColumnHeader *dayColumnHeader = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:MSDayColumnHeaderReuseIdentifier forIndexPath:indexPath];
+        MSAllDayView *dayColumnHeader = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:MSDayColumnHeaderReuseIdentifier forIndexPath:indexPath];
         NSDate *day                 = [self.weekFlowLayout dateForDayColumnHeaderAtIndexPath:indexPath];
         NSDate *currentDay          = [self currentTimeComponentsForCollectionView:self.collectionView layout:self.weekFlowLayout];
         
